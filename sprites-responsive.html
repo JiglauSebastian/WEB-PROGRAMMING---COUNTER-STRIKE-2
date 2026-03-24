@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>CS2 Esports - Sprite-uri CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
+</head>
+<body>
+
+    <header>
+        <a href="HTMLPage1-responsive.html" class="logo">CS2<span>Hub</span></a>
+
+        <input type="checkbox" id="nav-toggle" style="display:none">
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="HTMLPage1-responsive.html">Adaugare Meci</a></li>
+                <li><a href="HTMLPage2-responsive.html">Lista Meciuri</a></li>
+                <li class="active"><a href="sprites-responsive.html">Sprite-uri</a></li>
+                <li><a href="widgets-responsive.html">Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="style-switcher">
+            <a href="sprites-horizontal.html">Orizontal</a>
+            <a href="sprites-vertical.html">Vertical</a>
+            <a href="sprites-responsive.html" class="active">Responsive</a>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+
+        <div class="page-hero">
+            <h1>CSS Sprite-uri</h1>
+            <p>Meniu de navigare cu iconite din sprite sheet</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Meniu cu Sprite-uri CSS</div>
+
+            <nav id="sprite-nav">
+                <ul>
+                    <li>
+                        <a href="HTMLPage1-responsive.html">
+                            <span class="nav-icon icon-home"></span>
+                            Adaugare Meci
+                        </a>
+                    </li>
+                    <li>
+                        <a href="HTMLPage2-responsive.html">
+                            <span class="nav-icon icon-list"></span>
+                            Lista Meciuri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sprites">
+                            <span class="nav-icon icon-star"></span>
+                            Sprite-uri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets-responsive.html">
+                            <span class="nav-icon icon-grid"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <footer>
+        CS2Hub &copy; 2025 &mdash; Programare Web Lab CSS
+    </footer>
+</body>
+</html>

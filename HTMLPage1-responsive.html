@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>CS2 Esports - Adaugare Meci</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="HTMLPage1-responsive.html" class="logo">CS2<span>Hub</span></a>
+
+        <input type="checkbox" id="nav-toggle" style="display:none">
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
+
+        <nav id="main-nav">
+            <ul>
+                <li class="active"><a href="HTMLPage1-responsive.html">Adaugare Meci</a></li>
+                <li><a href="HTMLPage2-responsive.html">Lista Meciuri</a></li>
+                <li><a href="sprites-responsive.html">Sprite-uri</a></li>
+                <li><a href="widgets-responsive.html">Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="style-switcher">
+            <a href="HTMLPage1-horizontal.html">Orizontal</a>
+            <a href="HTMLPage1-vertical.html">Vertical</a>
+            <a href="HTMLPage1-responsive.html" class="active">Responsive</a>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+
+        <div class="page-hero">
+            <h1>Panou Administrare CS2</h1>
+            <p>Adaugati un meci nou in sistemul de management esports</p>
+        </div>
+
+        <div class="card">
+            <form name="addMatchForm" action="#" target="_blank">
+                <fieldset>
+                    <legend><b>Detalii Meci Nou</b></legend>
+
+                    <br>
+                    <span>Cod Meci:</span><br>
+                    <input type="text" name="matchId" value="CS2-1099" readonly size="10">
+                    &nbsp;
+                    <input type="text" name="game" value="Counter-Strike 2" disabled>
+                    <br><br>
+
+                    <span>Nume Echipe:</span><br>
+                    <input type="text" name="team1" maxlength="20" placeholder="Echipa 1"> &nbsp;vs&nbsp;
+                    <input type="text" name="team2" maxlength="20" placeholder="Echipa 2">
+                    <br><br>
+
+                    <span>Format Meci:</span><br>
+                    <label><input type="radio" name="format" value="bo1" checked> BO1</label>
+                    &nbsp;&nbsp;
+                    <label><input type="radio" name="format" value="bo3"> BO3</label>
+                    <br><br>
+
+                    <span>Tip Eveniment:</span><br>
+                    <label><input type="checkbox" name="isLan" value="lan"> LAN</label>
+                    &nbsp;&nbsp;
+                    <label><input type="checkbox" name="isMajor" value="major"> Major</label>
+                    <br><br>
+
+                    <span>Harta Decisivă:</span><br>
+                    <select name="deciderMap">
+                        <option value="mirage">Mirage</option>
+                        <option value="inferno" selected>Inferno</option>
+                        <option value="nuke">Nuke</option>
+                        <option value="ancient">Ancient</option>
+                        <option value="vertigo">Vertigo</option>
+                    </select>
+                    <br><br>
+
+                    <span>Hărți Banate:</span><br>
+                    <select name="bannedMaps" multiple size="3">
+                        <option value="dust2">Dust 2</option>
+                        <option value="anubis">Anubis</option>
+                        <option value="overpass">Overpass</option>
+                        <option value="train">Train</option>
+                    </select>
+                    <br><br>
+
+                    <span>Scor estimat:</span><br>
+                    <input type="number" name="estimatedScore" max="13" step="1" value="0">
+                    <br><br>
+
+                    <span>Note Admin:</span><br>
+                    <textarea name="adminNotes" rows="4" cols="50">Note aici...</textarea>
+                    <br><br>
+
+                    <input type="submit" value="Salvează Meciul" class="btn-primary">
+                    &nbsp;
+                    <input type="reset" value="Resetează">
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        CS2Hub &copy; 2025 &mdash; Programare Web Lab CSS
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>CS2 Esports - Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-vertical.css">
+</head>
+<body>
+
+    <div class="layout-wrapper">
+        <aside id="sidebar">
+            <a href="HTMLPage1-vertical.html" class="sidebar-logo">CS2<span>Hub</span></a>
+            <div class="nav-section-title">Navigare</div>
+            <nav id="main-nav">
+                <ul>
+                <li><a href="HTMLPage1-vertical.html">Adaugare Meci</a></li>
+                <li><a href="HTMLPage2-vertical.html">Lista Meciuri</a></li>
+                <li><a href="sprites-vertical.html">Sprite-uri</a></li>
+                <li class="active"><a href="widgets-vertical.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="style-switcher">
+                <div class="style-switcher-label">Stil</div>
+            <a href="widgets-horizontal.html">Orizontal</a>
+            <a href="widgets-vertical.html" class="active">Vertical</a>
+            <a href="widgets-responsive.html">Responsive</a>
+            </div>
+        </aside>
+        <main class="content-area">
+            <div class="page-wrapper">
+
+        <div class="page-hero">
+            <h1>Dashboard CS2 Pro League</h1>
+            <p>Statistici live si meciuri programate &mdash; Sezon 2025</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-label">Meciuri totale</div>
+                <div class="stat-value">148</div>
+                <div class="stat-sub">in sezonul curent</div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill" style="--fill: 74%"></div>
+                </div>
+            </div>
+            <div class="stat-card green">
+                <div class="stat-label">Echipe active</div>
+                <div class="stat-value">24</div>
+                <div class="stat-sub">in competitie</div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill green" style="--fill: 80%"></div>
+                </div>
+            </div>
+            <div class="stat-card blue">
+                <div class="stat-label">Harta cea mai jucata</div>
+                <div class="stat-value">Mirage</div>
+                <div class="stat-sub">38 aparitii</div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill blue" style="--fill: 62%"></div>
+                </div>
+            </div>
+            <div class="stat-card red">
+                <div class="stat-label">Meciuri live</div>
+                <div class="stat-value">2</div>
+                <div class="stat-sub">in desfasurare acum</div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill" style="--fill:100%;background:#e74c3c"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Meciuri Recente</div>
+            <div class="match-list">
+                <div class="match-card">
+                    <div class="match-teams">
+                        Natus Vincere <span class="match-vs">vs</span> FaZe Clan
+                    </div>
+                    <div class="match-info">
+                        <span>20 Octombrie &bull; BO3</span>
+                        <span>Mirage, Inferno</span>
+                    </div>
+                    <span class="badge badge-done">Finalizat</span>
+                </div>
+                <div class="match-card">
+                    <div class="match-teams">
+                        Vitality <span class="match-vs">vs</span> G2 Esports
+                    </div>
+                    <div class="match-info">
+                        <span>20 Octombrie &bull; BO3</span>
+                        <span>Nuke, Inferno, Ancient</span>
+                    </div>
+                    <span class="badge badge-live">Live</span>
+                </div>
+                <div class="match-card">
+                    <div class="match-teams">
+                        MOUZ <span class="match-vs">vs</span> Astralis
+                    </div>
+                    <div class="match-info">
+                        <span>21 Octombrie &bull; BO1</span>
+                        <span>Mirage</span>
+                    </div>
+                    <span class="badge badge-upcoming">Programat</span>
+                </div>
+            </div>
+        </div>
+
+        <h3>Top Echipe</h3>
+        <div class="team-grid">
+            <div class="team-card" data-tag="NaVi">
+                <div class="team-name">Natus Vincere</div>
+                <div class="team-rank">#1 Mondial</div>
+                <div class="team-record">W 32 &mdash; L 8</div>
+            </div>
+            <div class="team-card" data-tag="FaZe">
+                <div class="team-name">FaZe Clan</div>
+                <div class="team-rank">#2 Mondial</div>
+                <div class="team-record">W 29 &mdash; L 11</div>
+            </div>
+            <div class="team-card" data-tag="VIT">
+                <div class="team-name">Vitality</div>
+                <div class="team-rank">#3 Mondial</div>
+                <div class="team-record">W 27 &mdash; L 13</div>
+            </div>
+            <div class="team-card" data-tag="G2">
+                <div class="team-name">G2 Esports</div>
+                <div class="team-rank">#4 Mondial</div>
+                <div class="team-record">W 25 &mdash; L 15</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        CS2Hub &copy; 2025 &mdash; Programare Web Lab CSS
+    </footer>
+        </main>
+    </div>
+</body>
+</html>
